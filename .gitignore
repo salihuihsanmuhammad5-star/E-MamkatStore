@@ -1,0 +1,30 @@
+# Environment file – contains secrets
+.env
+
+# Vendor folder (managed by Composer)
+vendor/
+
+# Uploaded images (too large, placeholder only)
+images/products/
+images/bulk/
+
+# But keep placeholder
+!images/products/placeholder.jpg
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Database backup
+*.sql.gz

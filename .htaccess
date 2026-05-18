@@ -1,0 +1,27 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# If the file or directory exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Optionally rewrite .php URLs to clean URLs (remove .php extension)
+# This is optional, keep it commented if you don't need it yet
+# RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "\.(env|htaccess|sql|log)$">
+    Require all denied
+</FilesMatch>
+
