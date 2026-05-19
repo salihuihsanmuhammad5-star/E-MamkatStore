@@ -103,9 +103,7 @@ $testimonials = mysqli_query($conn, "SELECT t.*, u.name FROM testimonials t JOIN
 <?php include 'includes/footer.php'; ?>
     </body>
 </html>
-git remote add `origin https://https://github.com/salihuihsanmuhammad5-star/E-MamkatStore`
-git branch -M main
-git push -u origin main
+
 
 
 
