@@ -29,7 +29,7 @@ $testimonials = mysqli_query($conn, "SELECT t.*, u.name FROM testimonials t JOIN
                 <a href="<?= BASE_URL ?>/products.php" class="btn">Explore Now &#8594;</a>
             </div>
             <div class="col-2">
-                <img src="<?= BASE_URL ?>/images/image.png" alt="African Fashion" style="margin-left: 1rem;">
+                <img src="<?= BASE_URL ?>/images/image1.png" alt="African Fashion">
             </div>
         </div>
     </div>
@@ -101,9 +101,6 @@ $testimonials = mysqli_query($conn, "SELECT t.*, u.name FROM testimonials t JOIN
 </div>
 
 <?php include 'includes/footer.php'; ?>
-    </body>
+</body>
 </html>
-
-
-
 
