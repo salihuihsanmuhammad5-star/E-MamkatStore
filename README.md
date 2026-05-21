@@ -1,7 +1,7 @@
 # MamkatStore – African Fashion & Textiles eCommerce MIS
 
 A complete, database‑driven eCommerce Management Information System built with **PHP**, **MySQL**, and vanilla **JavaScript**.  
-RedStore specialises in handbags, textiles, laces, getzner, abayas, children's wear, and African traditional attires.
+MamkatStore specialises in handbags, textiles, laces, getzner, abayas, children's wear, and African traditional attires.
 
 ## Features
 
